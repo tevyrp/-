@@ -1,0 +1,13 @@
+public class RectangleCreator extends ShapeCreator {
+    private double width;
+    private double height;
+
+    public RectangleCreator(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public Shape createShape() {
+        return new Rectangle(width, height);
+    }
+}
