@@ -1,0 +1,11 @@
+public class CircleCreator extends ShapeCreator {
+    private double radius;
+
+    public CircleCreator(double radius) {
+        this.radius = radius;
+    }
+
+    public Shape createShape() {
+        return new Circle(radius);
+    }
+}
