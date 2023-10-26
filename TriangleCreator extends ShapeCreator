@@ -1,0 +1,13 @@
+public class TriangleCreator extends ShapeCreator {
+    private double base;
+    private double height;
+
+    public TriangleCreator(double base, double height) {
+        this.base = base;
+        this.height = height;
+    }
+
+    public Shape createShape() {
+        return new Triangle(base, height);
+    }
+}
